@@ -94,6 +94,22 @@ a:focus-visible{outline:3px solid #f2cf72;outline-offset:4px}
 .skip-link:focus{left:12px;outline:3px solid #d9bd78;outline-offset:3px}
 main{scroll-margin-top:18px}
 </style>
+
+<style id="kyouteki-cinematic-atmosphere-v1">
+/* Cinematic portfolio finish: restrained grid, archive signature, steel navigation */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(190,205,226,.12) 1px,transparent 1px),linear-gradient(90deg,rgba(190,205,226,.12) 1px,transparent 1px);background-size:88px 88px;mask-image:linear-gradient(to bottom,#000 0%,rgba(0,0,0,.55) 62%,transparent 100%)}
+header,main,footer{position:relative;z-index:1}
+main::before{content:"KYOUTEKI TOMO  /  OFFICIAL ARCHIVE";display:flex;align-items:center;gap:14px;margin:0 0 22px;color:#aeb9c9;font-size:.68rem;font-weight:700;letter-spacing:.24em}
+main::before{background:linear-gradient(90deg,rgba(177,192,214,.75),rgba(177,192,214,.75)) left center/48px 1px no-repeat;padding-left:60px}
+nav{border-color:rgba(190,205,226,.28)!important;box-shadow:0 16px 48px rgba(0,0,0,.38),inset 0 1px rgba(255,255,255,.035)!important}
+nav a{transition:color .18s ease,background .18s ease,border-color .18s ease,transform .18s ease;border-bottom:1px solid transparent}
+nav a:hover{border-bottom-color:rgba(220,230,244,.7);transform:translateY(-1px)}
+main>section,.panel{box-shadow:0 22px 64px rgba(0,0,0,.34),inset 0 1px rgba(255,255,255,.025)!important}
+main>section:hover,.panel:hover{border-color:rgba(190,205,226,.34)!important}
+@media(max-width:650px){main::before{margin-bottom:16px;font-size:.61rem;letter-spacing:.16em}}
+@media(prefers-reduced-motion:reduce){nav a{transition:none}nav a:hover{transform:none}}
+</style>
+
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
