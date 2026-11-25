@@ -112,8 +112,14 @@ footer{margin-top:34px!important;padding-top:24px!important;border-top:1px solid
 @media(max-width:650px){header{padding-top:14px!important;padding-bottom:28px!important}nav{gap:5px!important;padding:8px!important}nav a{padding:6px 7px!important;font-size:.82rem!important}header:after{font-size:.62rem;letter-spacing:.12em}main>section,.panel{padding:18px!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.video-card,.yt-build-card{transition:none}.video-card:hover,.yt-build-card:hover{transform:none}}
 </style>
+<style id="kyouteki-accessibility-v1">
+.skip-link{position:absolute;left:-9999px;top:8px;z-index:30;padding:10px 14px;background:#f4f5f7;color:#080a0e;font-weight:700}
+.skip-link:focus{left:12px;outline:3px solid #d9bd78;outline-offset:3px}
+main{scroll-margin-top:18px}
+</style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
   <header>
     <nav aria-label="メインナビゲーション">
       <a href="./index.html">トップ</a>
@@ -129,7 +135,7 @@ footer{margin-top:34px!important;padding-top:24px!important;border-top:1px solid
     <p lang="en">A wearable armor build in a Mad Max 2-inspired style, assembled from real materials using hand tools only.</p>
   </header>
 
-  <main>
+  <main id="main-content">
     <h2>1. 実物アメフト防具の解体</h2>
     <p>3Dプリンターは使用せず、実物のアメリカンフットボール用防具を解体してベースに使っています。</p>
 
