@@ -131,8 +131,27 @@ footer{margin-top:34px!important;padding-top:24px!important;border-top:1px solid
 <meta property="og:image:alt" content="強敵とも HIDDEN ARMOR PROJECT の公開映像サムネイル">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://i.ytimg.com/vi/2vKtx7vkwpA/maxresdefault.jpg">
+<style id="kyouteki-editorial-home-v1">
+.skip-link{position:absolute;left:-9999px;top:8px;z-index:20;padding:10px 14px;background:#f4f5f7;color:#080a0e}
+.skip-link:focus{left:12px}
+.editorial-story{margin:clamp(38px,7vw,82px) 0!important;padding:clamp(22px,4vw,46px)!important;border:1px solid rgba(190,204,224,.22);background:linear-gradient(135deg,rgba(26,34,46,.88),rgba(8,11,17,.96));box-shadow:0 24px 70px rgba(0,0,0,.32)}
+.editorial-heading{max-width:760px;margin-bottom:26px}
+.editorial-eyebrow{display:block;margin-bottom:12px;color:#b9c5d6;font-size:.72rem;font-weight:700;letter-spacing:.22em}
+.editorial-heading h2{margin:0 0 14px!important;font-size:clamp(1.65rem,4vw,2.8rem)!important;line-height:1.25!important;letter-spacing:.04em}
+.editorial-heading h2:after{width:88px!important;margin-top:17px!important}
+.editorial-heading p{max-width:690px;color:#c5cedb;font-size:1.02rem}
+.editorial-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.editorial-card{position:relative;min-height:210px;padding:22px 20px;border:1px solid rgba(183,198,219,.2);background:linear-gradient(145deg,rgba(43,53,68,.54),rgba(8,12,18,.72))}
+.editorial-number{color:#9eacbf;font-size:.78rem;letter-spacing:.18em}
+.editorial-card h3{margin:18px 0 8px;color:#f1f4f8;font-size:1.05rem;letter-spacing:.1em}
+.editorial-card p{min-height:3.8em;color:#c1cad6;font-size:.92rem}
+.editorial-card a{display:inline-block;margin-top:10px;color:#e3e9f1;font-size:.88rem;font-weight:700;text-decoration:none;border-bottom:1px solid #7f8da1;padding-bottom:4px}
+.editorial-card a:hover{color:#fff;border-color:#fff}
+@media(max-width:760px){.editorial-grid{grid-template-columns:1fr}.editorial-card{min-height:0}.editorial-card p{min-height:0}}
+</style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
 <header>
 <nav aria-label="メインナビゲーション">
 <a href="./index.html">トップ</a><a href="./process.html">製作工程</a><a href="./armor-process.html">鎧の詳細工程</a><a href="./gallery.html">ギャラリー</a><a href="./materials.html">素材・構成</a><a href="./videos.html">動画</a><a href="./faq.html">よくある質問</a>
@@ -142,7 +161,7 @@ footer{margin-top:34px!important;padding-top:24px!important;border-top:1px solid
 <p>マッドマックス2を思わせるスタイル。3Dプリンター不使用。実物のアメリカンフットボール防具を解体し、本革ライダースジャケットへ手工具のみで直接組み付けた、ケンシロウをイメージした実物アーマーの製作・着用記録です。</p>
 <p lang="en">A real, handcrafted Kenshiro-inspired armor build in a Mad Max 2-inspired style. Authentic American football pads were dismantled and mounted directly onto a genuine leather motorcycle jacket using hand tools only. Gunmetal and silver were hand-painted. No 3D printing.</p>
 </header>
-<main>
+<main id="main-content">
 
 <section class="home-hero" aria-label="HIDDEN ARMOR メインビジュアル">
 <img src="https://i.ytimg.com/vi/2vKtx7vkwpA/maxresdefault.jpg" alt="完成した実物アーマーのYouTube公開映像サムネイル" fetchpriority="high">
@@ -158,6 +177,34 @@ footer{margin-top:34px!important;padding-top:24px!important;border-top:1px solid
 <div class="home-stat"><strong>HAND BUILT</strong><span>手工具による直接組み付け</span></div>
 <div class="home-stat"><strong>HAND PAINTED</strong><span>ガンメタル＆シルバー手作業塗装</span></div>
 </div>
+
+<section class="editorial-story" aria-labelledby="editorial-title">
+  <div class="editorial-heading">
+    <span class="editorial-eyebrow">BEHIND THE ARMOR / THE MAKING</span>
+    <h2 id="editorial-title">素材から生まれた、唯一のシルエット。</h2>
+    <p>既製品を並べるのではなく、実物の素材と向き合い、手作業でひとつの姿へ。強敵ともが記録する、HIDDEN ARMOR PROJECT。</p>
+  </div>
+  <div class="editorial-grid">
+    <article class="editorial-card">
+      <span class="editorial-number">01</span>
+      <h3>REAL MATERIAL</h3>
+      <p>実物アメリカンフットボール防具と、本革ライダースジャケット。</p>
+      <a href="./materials.html">素材・構成を見る <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="editorial-card">
+      <span class="editorial-number">02</span>
+      <h3>HANDCRAFTED</h3>
+      <p>3Dプリンターを使わず、手工具による組み付けと手作業塗装で仕上げた記録。</p>
+      <a href="./process.html">製作工程を見る <span aria-hidden="true">↗</span></a>
+    </article>
+    <article class="editorial-card">
+      <span class="editorial-number">03</span>
+      <h3>WORN IN REAL LIFE</h3>
+      <p>背景演出と、実際に着用している鎧・革ジャン。その違いも明確に紹介。</p>
+      <a href="./gallery.html">作品ギャラリーを見る <span aria-hidden="true">↗</span></a>
+    </article>
+  </div>
+</section>
 
 <section class="panel">
 <h2>実物鎧の仕様｜The Real Armor</h2>
