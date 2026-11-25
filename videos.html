@@ -70,15 +70,21 @@ a:focus-visible{outline:3px solid #f2cf72;outline-offset:4px;border-radius:3px}
 .video-feature-copy .cta{margin-top:12px}
 @media(max-width:650px){.video-feature-hero{min-height:410px;align-items:flex-end}.video-feature-hero:after{background:linear-gradient(0deg,rgba(5,7,10,.96),rgba(5,7,10,.5) 62%,rgba(5,7,10,.1))}.video-feature-copy{padding:24px 20px}}
 </style>
+<style id="kyouteki-accessibility-v1">
+.skip-link{position:absolute;left:-9999px;top:8px;z-index:30;padding:10px 14px;background:#f4f5f7;color:#080a0e;font-weight:700}
+.skip-link:focus{left:12px;outline:3px solid #d9bd78;outline-offset:3px}
+main{scroll-margin-top:18px}
+</style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
 <header>
 <nav aria-label="メインナビゲーション">
 <a href="./index.html">トップ</a><a href="./process.html">製作工程</a><a href="./armor-process.html">鎧の詳細工程</a><a href="./gallery.html">ギャラリー</a><a href="./materials.html">素材・構成</a><a href="./videos.html">動画</a><a href="./faq.html">よくある質問</a>
 <a href="./index.html#about">プロジェクト概要</a><a href="./index.html#contact">Contact</a><a href="./index.html#media">取材・出演依頼</a></nav>
 <h1>ケンシロウ コスプレ動画<br><span lang="en">Kenshiro Cosplay Build Videos</span></h1>
 </header>
-<main>
+<main id="main-content">
 <section class="video-feature-hero" aria-label="公開動画アーカイブの紹介">
   <img src="https://i.ytimg.com/vi/2vKtx7vkwpA/maxresdefault.jpg" alt="YouTube公開映像のサムネイル。実物鎧の完成イメージ" fetchpriority="high">
   <div class="video-feature-copy">
