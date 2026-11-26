@@ -16,3 +16,13 @@ img{max-width:100%;height:auto}figure{margin:18px 0}figcaption,.muted{color:#aeb
 footer{border-top:1px solid #303844;color:#aeb6c3;font-size:.9rem;margin-top:40px}
 @media(max-width:620px){header,main,footer{padding-left:16px;padding-right:16px}nav{gap:5px}nav a{font-size:.84rem;padding:6px 7px}.panel{padding:17px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Consolidated shared rules formerly duplicated on every page */
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;margin:0 0 18px}
+nav a{display:inline-block;padding:5px 0;text-decoration:none;font-weight:650}
+nav a:hover{text-decoration:underline;text-underline-offset:4px}
+a:focus-visible{outline:3px solid #f2cf72;outline-offset:4px;border-radius:3px}
+.panel{margin:18px 0;padding:18px;background:#1b1b20;border:1px solid #38383f;border-radius:8px}
+.cta{display:inline-block;padding:10px 16px;margin:6px 8px 6px 0;border:1px solid #9fc5f5;border-radius:6px;text-decoration:none;font-weight:700}
+.cta:hover{background:#242a35}
+@media(max-width:600px){header,main,footer{padding-left:16px;padding-right:16px}nav{gap:7px 13px}nav a{font-size:.95rem}.panel{padding:15px}}
