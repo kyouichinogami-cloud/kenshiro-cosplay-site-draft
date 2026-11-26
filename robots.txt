@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://kyouichinogami-cloud.github.io/kenshiro-cosplay-site-draft/sitemap.xml
