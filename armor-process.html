@@ -153,6 +153,12 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 .page-masthead p{max-width:560px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
 @media(max-width:650px){.page-masthead{min-height:350px;padding-right:20px}.page-masthead .masthead-art{width:100%;opacity:.42;object-position:center 30%;mask-image:linear-gradient(180deg,rgba(0,0,0,.75),rgba(0,0,0,.3) 48%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.75),rgba(0,0,0,.3) 48%,transparent 100%)}.page-masthead .masthead-art-note{font-size:.52rem;right:12px;bottom:10px}}
 </style>
+<style id="kyouteki-spec-board-v1">
+main .spec-board{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0;margin:18px 0 22px;list-style:none}
+main .spec-board li{position:relative;min-height:76px;display:flex;align-items:center;margin:0;padding:17px 18px 17px 22px;border:1px solid rgba(184,199,219,.2);background:linear-gradient(120deg,rgba(31,39,51,.92),rgba(10,13,18,.96));color:#e0e6ef;font-size:.92rem}
+main .spec-board li:before{content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;background:linear-gradient(180deg,#d5deeb,#65758a)}
+@media(max-width:560px){main .spec-board{grid-template-columns:1fr;gap:8px}main .spec-board li{min-height:60px;padding:14px 15px 14px 19px}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -175,7 +181,7 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 <span class="masthead-art-note">ARMOR FILM STILL / YOUTUBE</span><span>OBJECT STUDY / THE ARMOR FILE</span><h2>BUILT TO BE WORN.<br>MADE TO BE REMEMBERED.</h2><p>実物素材を使った着用型アーマー。その構成と完成仕様を記録します。</p><div class="masthead-rule"><i>REAL OBJECT</i><i>HAND FINISH</i><i>WORN FORM</i></div></section>
     <section class="panel">
       <h2>製作の特徴</h2>
-      <ul>
+      <ul class="spec-board">
         <li>実物のアメリカンフットボール用防具を解体して再利用</li>
         <li>本革ライダースジャケットに手工具で組み上げ</li>
         <li>3Dプリンター不使用</li>
