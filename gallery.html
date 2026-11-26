@@ -112,6 +112,21 @@ main>section:hover,.panel:hover{border-color:rgba(190,205,226,.34)!important}
 @media(prefers-reduced-motion:reduce){nav a{transition:none}nav a:hover{transform:none}}
 </style>
 
+<style id="kyouteki-gallery-finish-v2">
+.gallery-feature-hero{position:relative;isolation:isolate;min-height:clamp(330px,48vw,520px);margin:10px 0 28px;overflow:hidden;border:1px solid rgba(190,204,222,.34);background:#080a0e;box-shadow:0 24px 70px rgba(0,0,0,.52)}
+.gallery-feature-hero:after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(4,6,9,.96),rgba(4,6,9,.72) 42%,rgba(4,6,9,.08)),linear-gradient(0deg,rgba(4,6,9,.62),transparent 60%)}
+.gallery-feature-hero:before{content:"";position:absolute;z-index:2;inset:14px;border:1px solid rgba(215,225,238,.19);pointer-events:none}
+.gallery-feature-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 36%;opacity:.9;filter:contrast(1.12) saturate(.72)}
+.gallery-feature-copy{position:relative;z-index:3;display:flex;min-height:inherit;max-width:650px;flex-direction:column;justify-content:center;padding:clamp(25px,5vw,58px)}
+.gallery-feature-copy>span{font-size:.72rem;letter-spacing:.24em;color:#c6d0de}
+.gallery-feature-copy h2{border:0;padding:0;margin:14px 0;font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.02;letter-spacing:.04em}
+.gallery-feature-copy h2:after{display:none}
+.gallery-feature-copy p{max-width:480px;color:#e1e6ed;line-height:1.8}
+.gallery-feature-copy .cta{align-self:flex-start;border-radius:2px}
+.gallery-feature-copy small{margin-top:18px;color:#aab5c5;font-size:.65rem;letter-spacing:.15em}
+.gallery-policy{background:linear-gradient(120deg,rgba(34,42,54,.92),rgba(10,13,18,.98))}
+@media(max-width:650px){.gallery-feature-hero{min-height:420px}.gallery-feature-hero:after{background:linear-gradient(0deg,rgba(4,6,9,.96),rgba(4,6,9,.62) 58%,rgba(4,6,9,.12))}.gallery-feature-copy{justify-content:flex-end;padding:24px 20px}.gallery-feature-hero:before{inset:9px}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -128,12 +143,22 @@ main>section:hover,.panel:hover{border-color:rgba(190,205,226,.34)!important}
 <h1>作品ビジュアルアーカイブ<br><span lang="en">VISUAL ARCHIVE</span></h1>
 </header>
 <main id="main-content">
-<section class="panel"><h2>掲載方針</h2><p>このページには、撮影元と内容を確認した実写真のみを掲載します。未提供・未検品の写真枠は表示しません。撮影元・掲載許可・作品との関連を確認できない画像は掲載対象外です。</p><p lang="en">Only supplied, reviewed original photographs are published here. Unsubmitted or unverified slots remain unpublished.</p></section>
-<section class="panel">
-<h2>製作過程を動画で見る｜Watch the Build</h2>
-<p>写真の原寸確認が完了した画像のみをギャラリーに追加します。先に公開済みの製作・完成動画をご覧いただけます。</p>
-<p lang="en">Only reviewed original photographs will be added here. Meanwhile, explore the published build videos.</p>
-<p><a href="./videos.html">HIDDEN ARMORの動画一覧｜Build videos</a> ・ <a href="https://www.youtube.com/playlist?list=PLVbVaAH-0GsY" target="_blank" rel="noopener noreferrer">YouTube公式プレイリスト</a></p>
+<section class="gallery-feature-hero" aria-label="公開映像ビジュアルアーカイブ">
+<img src="https://i.ytimg.com/vi/2vKtx7vkwpA/maxresdefault.jpg" alt="完成した実物アーマーを紹介するYouTube公開映像のサムネイル" fetchpriority="high">
+<div class="gallery-feature-copy">
+<span>VISUAL ARCHIVE / THE ARMOR</span>
+<h2>THE ARMOR.<br>IN FRAME.</h2>
+<p>完成形、素材、製作の軌跡。強敵ともの公開映像から、HIDDEN ARMOR PROJECTの姿を記録します。</p>
+<a class="cta" href="#visual-archive">アーカイブを見る｜EXPLORE THE ARCHIVE</a>
+<small>HERO IMAGE: YOUTUBE PUBLIC VIDEO THUMBNAIL</small>
+</div>
+</section>
+<section class="panel gallery-policy">
+<span class="editorial-eyebrow">PHOTO POLICY / ORIGINAL MATERIALS</span>
+<h2>実物写真の掲載について</h2>
+<p>独自撮影の実物写真は、元画像・撮影元・作品との関連を確認できたものだけを掲載します。現在、未検品の画像は公開していません。このページのカード画像は、すべてYouTube公開映像のサムネイルです。</p>
+<p lang="en">Original photographs will be added only after source and content review. All current cards are thumbnails from public YouTube videos, not original photo uploads.</p>
+<p><a href="./videos.html">映像アーカイブへ｜VIDEO ARCHIVE</a> ・ <a href="https://www.youtube.com/playlist?list=PLVbVaAH-0GsY" target="_blank" rel="noopener noreferrer">YouTube公式プレイリスト</a></p>
 </section>
 <section class="panel" id="visual-archive"><h2>公開映像ビジュアルアーカイブ</h2><p>以下は「強敵とも」で公開している映像のサムネイルです。実物写真と混同しないよう、公開映像のビジュアルとして掲載しています。</p><div class="yt-build-grid">
 <article class="yt-build-card"><a href="https://www.youtube.com/watch?v=2vKtx7vkwpA" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/2vKtx7vkwpA/maxresdefault.jpg" alt="完成した実物アーマーの公開映像サムネイル" loading="lazy"><div><h3>THE COMPLETE ARMOR</h3><p>完成した実物アーマーの全体像</p></div></a></article>
