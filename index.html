@@ -336,18 +336,27 @@ body>header{padding-bottom:clamp(18px,3vw,30px)!important}
 </style>
 
 <style id="kyouteki-run272-pc-firstview">
-/* Run #272 — desktop first-view refinement; mobile/tablet rules remain untouched */
-@media (min-width:900px) {
-  body>header { padding-top:12px!important; padding-bottom:12px!important; }
-  body>header nav { margin-bottom:14px!important; }
-  body>header h1 { margin-top:clamp(18px,2.2vw,30px)!important; margin-bottom:8px!important; }
-  body>header:after { margin-top:14px; padding-top:8px; }
-  .home-hero { min-height:clamp(500px,72vh,640px); }
-  .home-hero-copy { min-height:inherit; max-width:760px; padding:clamp(42px,5vw,76px); padding-bottom:clamp(78px,8vh,100px); }
-  .home-hero h2 { font-size:clamp(3.4rem,7vw,6.3rem)!important; }
-  .home-hero p { max-width:560px; line-height:1.75; }
-  .home-hero .cta { padding:15px 28px!important; border-color:#dbe4f0!important; box-shadow:0 12px 32px rgba(0,0,0,.38); }
-  .home-hero-copy:after { content:"SCROLL — THE ARCHIVE"; position:absolute; left:clamp(42px,5vw,76px); bottom:25px; color:#c4cedc; font-size:.62rem; letter-spacing:.24em; text-shadow:0 2px 10px #000; }
+/* Run #272 — PC first view: let the hero own the opening screen (min-width:900px only; mobile untouched) */
+@media(min-width:900px){
+  body>header{padding-top:16px!important;padding-bottom:16px!important}
+  body>header nav{margin-bottom:18px!important}
+  body>header h1{margin:22px 0 8px!important;font-size:clamp(2.2rem,4.2vw,3.3rem)!important}
+  body>header h1:after{margin-top:14px}
+  body>header:after{margin-top:16px;padding-top:10px}
+  main{padding-top:18px!important}
+  main::before{margin-bottom:14px}
+  .home-hero{min-height:clamp(500px,72vh,640px);margin-top:4px}
+  .home-hero-copy{max-width:780px;padding:clamp(40px,5vw,76px)}
+  .home-hero h2{font-size:clamp(3.6rem,6.4vw,6.3rem)!important;line-height:1.02}
+  .home-hero p{max-width:560px;font-size:1.14rem;line-height:1.95}
+  .home-hero .cta{margin-top:20px;padding:15px 28px!important;font-size:1rem;border-color:#d7e0ec;background:linear-gradient(120deg,rgba(148,166,192,.32),rgba(16,21,29,.55));box-shadow:0 10px 30px rgba(0,0,0,.45)}
+  .home-hero .cta:hover{background:rgba(163,181,205,.3)!important;border-color:#f0f4fa!important}
+  .home-hero-copy::after{content:"SCROLL — THE ARCHIVE";position:absolute;left:clamp(40px,5vw,76px);bottom:26px;color:rgba(199,209,224,.66);font-size:.62rem;font-weight:700;letter-spacing:.3em}
+  .hero-source-note{bottom:22px}
+  .editorial-story{margin-top:clamp(30px,4vw,52px)!important}
+}
+@media(min-width:900px) and (prefers-reduced-motion:reduce){
+  .home-hero-copy::after{content:"SCROLL — THE ARCHIVE"}
 }
 </style>
 
