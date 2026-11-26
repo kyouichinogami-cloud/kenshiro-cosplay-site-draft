@@ -21,9 +21,13 @@
 .error-actions{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:26px}
 .error-actions .cta{margin:0}
 @media(max-width:620px){.error-wrap{min-height:58vh}.error-card{padding:28px 22px}.error-code{font-size:clamp(5.5rem,27vw,8rem)}}
+
+.skip-link{position:absolute;left:-9999px;top:8px;z-index:20;padding:10px 14px;background:#f4f5f7;color:#080a0e;font-weight:700}
+.skip-link:focus{left:12px;outline:3px solid #e4c98d;outline-offset:3px}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">本文へスキップ</a>
 <header>
 <nav aria-label="メインナビゲーション">
 <a href="./index.html">TOP / トップ</a>
