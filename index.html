@@ -186,13 +186,28 @@ main>section:hover,.panel:hover{border-color:rgba(190,205,226,.34)!important}
 .media-contact-panel{background:linear-gradient(120deg,rgba(36,44,56,.95),rgba(11,14,20,.98));border-color:rgba(190,204,222,.28)}
 @media(max-width:650px){.home-hero:before{inset:9px}.home-hero h2{font-size:clamp(2.35rem,12vw,3.5rem)!important}.home-stat{border-right:0;border-bottom:1px solid rgba(185,199,218,.18)}.home-stat:last-child{border-bottom:0}}
 </style>
+<style id="kyouteki-navigation-finish-v2">
+header nav{display:flex!important;flex-wrap:nowrap!important;align-items:center;gap:7px!important;width:100%;max-width:100%;margin:0 0 24px!important;padding:9px!important;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#69788d rgba(10,13,18,.45);background:rgba(8,11,16,.84)!important;border:1px solid rgba(190,204,222,.28)!important;border-radius:3px!important;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+header nav a{flex:0 0 auto!important;display:inline-flex!important;align-items:center;justify-content:center;min-height:38px;padding:7px 12px!important;border:1px solid transparent;color:#dce3ed!important;font-size:.75rem!important;font-weight:700!important;letter-spacing:.11em;text-decoration:none!important;white-space:nowrap}
+header nav a:hover{border-color:rgba(206,218,235,.35);background:rgba(151,169,193,.12)!important;color:#fff!important}
+header nav a[aria-current="page"]{border-color:rgba(213,224,240,.52);background:linear-gradient(135deg,rgba(151,169,193,.22),rgba(45,56,72,.25))!important;color:#fff!important;box-shadow:inset 0 -2px 0 #d4dce8}
+header nav::-webkit-scrollbar{height:4px}
+header nav::-webkit-scrollbar-thumb{background:#69788d}
+@media(max-width:650px){header nav{margin-bottom:18px!important;padding:7px!important}header nav a{min-height:36px;padding:6px 10px!important;font-size:.7rem!important}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
 <header>
 <nav aria-label="メインナビゲーション">
-<a href="./index.html">トップ</a><a href="./process.html">製作工程</a><a href="./armor-process.html">鎧の詳細工程</a><a href="./gallery.html">ギャラリー</a><a href="./materials.html">素材・構成</a><a href="./videos.html">動画</a><a href="./faq.html">よくある質問</a>
-<a href="./index.html#about">プロジェクト概要</a><a href="./index.html#contact">Contact</a><a href="./index.html#media">取材・出演依頼</a></nav>
+<a href="./index.html" aria-current="page">TOP</a>
+<a href="./process.html">THE MAKING</a>
+<a href="./armor-process.html">ARMOR FILE</a>
+<a href="./gallery.html">GALLERY</a>
+<a href="./materials.html">MATERIALS</a>
+<a href="./videos.html">FILM</a>
+<a href="./faq.html">INFO</a>
+</nav>
 <h1>強敵とも 公式ホームページ</h1>
 <p class="home-kicker">KYOUTEKI TOMO OFFICIAL WEBSITE</p>
 <p>マッドマックス2を思わせるスタイル。3Dプリンター不使用。実物のアメリカンフットボール防具を解体し、本革ライダースジャケットへ手工具のみで直接組み付けた、ケンシロウをイメージした実物アーマーの製作・着用記録です。</p>
