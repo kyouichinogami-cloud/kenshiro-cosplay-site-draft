@@ -111,6 +111,23 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 .page-masthead p{max-width:560px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
 @media(max-width:650px){.page-masthead{min-height:350px;padding-right:20px}.page-masthead .masthead-art{width:100%;opacity:.42;object-position:center 30%;mask-image:linear-gradient(180deg,rgba(0,0,0,.75),rgba(0,0,0,.3) 48%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.75),rgba(0,0,0,.3) 48%,transparent 100%)}.page-masthead .masthead-art-note{font-size:.52rem;right:12px;bottom:10px}}
 </style>
+<style id="kyouteki-faq-interaction-v1">
+.faq-index{margin:0 0 18px;padding:15px 18px;border-left:2px solid #aab8cb;background:linear-gradient(90deg,rgba(115,132,156,.16),rgba(12,15,21,.3))}
+.faq-index span{display:block;color:#aebdd0;font-size:.65rem;letter-spacing:.2em}
+.faq-index strong{display:block;margin-top:5px;color:#edf1f6;font-size:1.1rem}
+.faq-index p{margin:3px 0 0;color:#aeb8c7;font-size:.85rem}
+.faq-item{margin:10px 0;border:1px solid rgba(184,199,220,.2);background:linear-gradient(120deg,rgba(25,31,41,.9),rgba(10,13,18,.94));transition:border-color .18s ease,background .18s ease}
+.faq-item[open]{border-color:rgba(191,207,229,.48);background:linear-gradient(120deg,rgba(35,43,56,.96),rgba(11,14,20,.98))}
+.faq-item summary{position:relative;display:flex;align-items:center;min-height:62px;padding:16px 54px 16px 19px;color:#edf1f6;font-weight:700;line-height:1.6;cursor:pointer;list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary:after{content:"＋";position:absolute;right:19px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:25px;height:25px;border:1px solid rgba(194,208,228,.35);color:#dce5f1;font-size:1.1rem;font-weight:400}
+.faq-item[open] summary:after{content:"−";background:rgba(159,177,201,.14)}
+.faq-item summary:focus-visible{outline:2px solid #dce5f1;outline-offset:-3px}
+.faq-answer{padding:0 19px 18px;border-top:1px solid rgba(184,199,220,.13)}
+.faq-answer p{margin:14px 0 0;color:#cbd4e0}
+.faq-answer p[lang="en"]{color:#aeb8c7;font-size:.88rem}
+@media(prefers-reduced-motion:reduce){.faq-item{transition:none}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -131,27 +148,44 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 <section class="page-masthead">
 <img class="masthead-art" src="https://i.ytimg.com/vi/PQ-21jiNvIo/maxresdefault.jpg" alt="実物アーマーの記録を紹介するYouTube公開映像のサムネイル" loading="lazy">
 <span class="masthead-art-note">PROJECT FILM STILL / YOUTUBE</span><span>FIELD GUIDE / PROJECT NOTES</span><h2>THE DETAILS.<br>WITHOUT THE MYTH.</h2><p>素材、製作方針、実物と背景演出の違い。よくある質問をまとめました。</p><div class="masthead-rule"><i>PROJECT</i><i>MATERIALS</i><i>VISUALS</i></div></section>
-    <h2>Q. 鎧はどのような素材と方法で作られていますか？</h2>
-    <p>3Dプリンターは使用していません。実物のアメリカンフットボール用防具を解体し、本革ライダースジャケットへ手工具のみで直接組み付け、ガンメタル＆シルバーで手作業塗装しています。</p>
+    <div class="faq-index" aria-label="FAQ overview"><span>FIELD GUIDE / 08 QUESTIONS</span><strong>知りたいことから、すぐに。</strong><p>質問をタップすると回答が開きます。</p></div>
+<details class="faq-item" open>
+<summary>Q. 鎧はどのような素材と方法で作られていますか？</summary>
+<div class="faq-answer"><p>3Dプリンターは使用していません。実物のアメリカンフットボール用防具を解体し、本革ライダースジャケットへ手工具のみで直接組み付け、ガンメタル＆シルバーで手作業塗装しています。</p></div>
+</details>
 
-    <h2>Q. 背景はCGですか？鎧は本当に着ていますか？</h2>
-    <p>背景はCG合成の場合がありますが、着用している鎧と本革ライダースジャケットは100%実物です。</p>
-    <p lang="en">No 3D printing. Real American football pads dismantled and hand-mounted onto a genuine leather jacket using hand tools only, hand-painted in gunmetal and silver. Backgrounds may be CGI-composited; the worn armor and leather jacket are 100% real.</p>
+    <details class="faq-item">
+<summary>Q. 背景はCGですか？鎧は本当に着ていますか？</summary>
+<div class="faq-answer"><p>背景はCG合成の場合がありますが、着用している鎧と本革ライダースジャケットは100%実物です。</p>
+    <p lang="en">No 3D printing. Real American football pads dismantled and hand-mounted onto a genuine leather jacket using hand tools only, hand-painted in gunmetal and silver. Backgrounds may be CGI-composited; the worn armor and leather jacket are 100% real.</p></div>
+</details>
 
-    <h2>Q. 動画はどこで見られますか？</h2>
-    <p>製作動画一覧と公式プレイリストを公開しています。<a href="./videos.html">HIDDEN ARMORの動画一覧</a> または <a href="https://www.youtube.com/playlist?list=PLVbVaAH-0GsY" target="_blank" rel="noopener noreferrer">YouTube公式プレイリスト</a>をご覧ください。</p>
+    <details class="faq-item">
+<summary>Q. 動画はどこで見られますか？</summary>
+<div class="faq-answer"><p>製作動画一覧と公式プレイリストを公開しています。<a href="./videos.html">HIDDEN ARMORの動画一覧</a> または <a href="https://www.youtube.com/playlist?list=PLVbVaAH-0GsY" target="_blank" rel="noopener noreferrer">YouTube公式プレイリスト</a>をご覧ください。</p></div>
+</details>
 
     <section>
-      <h2>Q. どのような防具を使っていますか？</h2>
-      <p>市販のアメリカンフットボール用防具を実際に解体し、鎧のパーツとして再構成しています。既製のコスプレ用プラスチック鎧を購入して装着したものではありません。</p>
-      <h2>Q. 鎧はジャケットにどのように取り付けていますか？</h2>
-      <p>本革ライダースジャケットに防具パーツを直接組み付けています。製作には手工具を使用し、3Dプリンターは使っていません。</p>
-      <h2>Q. 表面の金属色はどのように仕上げていますか？</h2>
-      <p>ガンメタルとシルバーを中心に、手作業で塗装しています。</p>
-      <h2>Q. 写真や動画の背景も実物ですか？</h2>
-      <p>背景にはCG合成を使用する場合があります。背景演出と、実際に着用している鎧・本革ライダースジャケットは区別して紹介しています。</p>
-      <h2>Q. 制作過程や素材を確認できますか？</h2>
-      <p><a href="./materials.html">素材・構成</a>、<a href="./armor-process.html">鎧の詳細工程</a>、<a href="./videos.html">公開動画一覧</a>で紹介しています。写真ギャラリーには、元画像と内容を確認できた素材のみを掲載します。</p>
+      <details class="faq-item">
+<summary>Q. どのような防具を使っていますか？</summary>
+<div class="faq-answer"><p>市販のアメリカンフットボール用防具を実際に解体し、鎧のパーツとして再構成しています。既製のコスプレ用プラスチック鎧を購入して装着したものではありません。</p></div>
+</details>
+      <details class="faq-item">
+<summary>Q. 鎧はジャケットにどのように取り付けていますか？</summary>
+<div class="faq-answer"><p>本革ライダースジャケットに防具パーツを直接組み付けています。製作には手工具を使用し、3Dプリンターは使っていません。</p></div>
+</details>
+      <details class="faq-item">
+<summary>Q. 表面の金属色はどのように仕上げていますか？</summary>
+<div class="faq-answer"><p>ガンメタルとシルバーを中心に、手作業で塗装しています。</p></div>
+</details>
+      <details class="faq-item">
+<summary>Q. 写真や動画の背景も実物ですか？</summary>
+<div class="faq-answer"><p>背景にはCG合成を使用する場合があります。背景演出と、実際に着用している鎧・本革ライダースジャケットは区別して紹介しています。</p></div>
+</details>
+      <details class="faq-item">
+<summary>Q. 制作過程や素材を確認できますか？</summary>
+<div class="faq-answer"><p><a href="./materials.html">素材・構成</a>、<a href="./armor-process.html">鎧の詳細工程</a>、<a href="./videos.html">公開動画一覧</a>で紹介しています。写真ギャラリーには、元画像と内容を確認できた素材のみを掲載します。</p></div>
+</details>
     </section>
     <section lang="en">
       <h2>About the Kenshiro-inspired real armor</h2>
