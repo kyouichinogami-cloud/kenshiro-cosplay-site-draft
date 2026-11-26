@@ -167,6 +167,15 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 </style>
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <meta name="theme-color" content="#090c11">
+<style id="kyouteki-masthead-visual-v1">
+.page-masthead{min-height:clamp(300px,38vw,420px);display:flex;flex-direction:column;justify-content:center;padding-right:clamp(24px,5vw,64px);isolation:isolate}
+.page-masthead .masthead-art{position:absolute;z-index:-1;top:0;right:0;width:58%;height:100%;object-fit:cover;object-position:center 34%;opacity:.55;filter:contrast(1.12) saturate(.68);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.22) 16%,#000 68%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.22) 16%,#000 68%)}
+.page-masthead .masthead-art-note{position:absolute;right:16px;bottom:13px;z-index:2;color:#c3ccda;font-size:.58rem;letter-spacing:.16em;text-shadow:0 2px 8px #000}
+.page-masthead>span,.page-masthead h2,.page-masthead p,.page-masthead .masthead-rule{position:relative;z-index:1}
+.page-masthead h2{max-width:650px;text-shadow:0 3px 18px rgba(0,0,0,.72)}
+.page-masthead p{max-width:560px;text-shadow:0 2px 12px rgba(0,0,0,.9)}
+@media(max-width:650px){.page-masthead{min-height:350px;padding-right:20px}.page-masthead .masthead-art{width:100%;opacity:.42;object-position:center 30%;mask-image:linear-gradient(180deg,rgba(0,0,0,.75),rgba(0,0,0,.3) 48%,transparent 100%);-webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,.75),rgba(0,0,0,.3) 48%,transparent 100%)}.page-masthead .masthead-art-note{font-size:.52rem;right:12px;bottom:10px}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -186,7 +195,9 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
   </header>
 
   <main id="main-content">
-<section class="page-masthead"><span>THE MAKING / 03 STAGES</span><h2>FROM REAL MATERIALS<br>TO A WORN ARMOR.</h2><p>素材の再構成、革への組み上げ、手作業の仕上げ。実物鎧が形になるまでの記録。</p><div class="masthead-rule"><i>01 MATERIAL</i><i>02 ASSEMBLY</i><i>03 FINISH</i></div></section>
+<section class="page-masthead">
+<img class="masthead-art" src="https://i.ytimg.com/vi/EQhcVfGd2kQ/maxresdefault.jpg" alt="手作業による製作記録を紹介するYouTube公開映像のサムネイル" loading="lazy">
+<span class="masthead-art-note">BUILD FILM STILL / YOUTUBE</span><span>THE MAKING / 03 STAGES</span><h2>FROM REAL MATERIALS<br>TO A WORN ARMOR.</h2><p>素材の再構成、革への組み上げ、手作業の仕上げ。実物鎧が形になるまでの記録。</p><div class="masthead-rule"><i>01 MATERIAL</i><i>02 ASSEMBLY</i><i>03 FINISH</i></div></section>
     <h2>1. 実物アメフト防具の解体</h2>
     <p>3Dプリンターは使用せず、実物のアメリカンフットボール用防具を解体してベースに使っています。</p>
 
