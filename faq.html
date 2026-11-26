@@ -118,6 +118,24 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 
 <link rel="preconnect" href="https://i.ytimg.com">
 <link rel="preload" as="image" href="https://i.ytimg.com/vi/PQ-21jiNvIo/maxresdefault.jpg" fetchpriority="high">
+
+<style id="kyouteki-faq-editorial-v2">
+/* Numbered field-guide rhythm for the eight FAQ entries */
+main{counter-reset:field-question}
+.faq-item{position:relative;overflow:hidden}
+.faq-item summary{gap:12px}
+.faq-item summary:before{counter-increment:field-question;content:"0" counter(field-question);flex:0 0 34px;color:#91a2ba;font-size:.68rem;font-weight:800;letter-spacing:.13em}
+.faq-item summary:after{transition:background .18s ease,border-color .18s ease}
+.faq-item[open] summary:before{color:#e0e7f1}
+.faq-item[open] summary:after{border-color:#c4d0e0}
+.faq-index{display:grid;grid-template-columns:auto 1fr;column-gap:16px;align-items:center;padding:17px 20px}
+.faq-index span{grid-column:1/-1;margin-bottom:5px}
+.faq-index strong{font-size:1.13rem}
+.faq-index p{margin:0;text-align:right}
+.faq-answer{padding-left:65px}
+@media(max-width:560px){.faq-index{grid-template-columns:1fr;gap:4px}.faq-index p{text-align:left}.faq-answer{padding-left:19px}.faq-item summary{padding-left:13px;gap:8px}.faq-item summary:before{flex-basis:28px;font-size:.62rem}}
+@media(prefers-reduced-motion:reduce){.faq-item summary:after{transition:none}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
