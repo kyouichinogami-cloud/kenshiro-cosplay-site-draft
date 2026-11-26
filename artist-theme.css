@@ -60,3 +60,16 @@ header nav a{
 @media(max-width:650px){
   header nav a{min-height:44px!important}
 }
+
+/* True horizontal navigation scrolling on narrow screens */
+@media(max-width:650px){
+  header nav{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+    overscroll-behavior-x:contain;
+    scrollbar-width:thin;
+    scrollbar-color:rgba(190,205,226,.45) transparent;
+  }
+  header nav a{flex:0 0 auto;white-space:nowrap}
+}
