@@ -136,18 +136,30 @@ header nav::-webkit-scrollbar{height:4px}
 header nav::-webkit-scrollbar-thumb{background:#69788d}
 @media(max-width:650px){header nav{margin-bottom:18px!important;padding:7px!important}header nav a{min-height:36px;padding:6px 10px!important;font-size:.7rem!important}}
 </style>
+<style id="kyouteki-footer-finish-v1">
+.kyouteki-footer{position:relative;margin-top:64px!important;padding:36px clamp(18px,4vw,42px) 24px!important;border-top:1px solid rgba(185,199,218,.3)!important;background:linear-gradient(180deg,rgba(23,29,38,.65),rgba(6,8,12,.96));text-align:center}
+.footer-mark{display:flex;flex-direction:column;align-items:center;gap:2px}
+.footer-mark span{color:#9eacbf;font-size:.68rem;letter-spacing:.32em}
+.footer-mark strong{color:#eef2f7;font-size:clamp(1.5rem,4vw,2.1rem);letter-spacing:.12em}
+.footer-mark small{color:#8794a7;font-size:.62rem;letter-spacing:.2em}
+.kyouteki-footer>p{margin:12px auto;color:#aeb8c7;font-size:.86rem}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;margin:20px auto}
+.footer-links a{color:#d5deea;font-size:.82rem;text-decoration:none}
+.footer-links a:hover{text-decoration:underline;text-underline-offset:4px}
+.kyouteki-footer .footer-copy{padding-top:15px;border-top:1px solid rgba(185,199,218,.14);color:#7f8b9d;font-size:.7rem;letter-spacing:.12em}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
 <header>
 <nav aria-label="メインナビゲーション">
-<a href="./index.html">TOP</a>
-<a href="./process.html">THE MAKING</a>
-<a href="./armor-process.html">ARMOR FILE</a>
-<a href="./gallery.html" aria-current="page">GALLERY</a>
-<a href="./materials.html">MATERIALS</a>
-<a href="./videos.html">FILM</a>
-<a href="./faq.html">INFO</a>
+<a href="./index.html">TOP / トップ</a>
+<a href="./process.html">MAKING / 製作工程</a>
+<a href="./armor-process.html">ARMOR / 鎧</a>
+<a href="./gallery.html" aria-current="page">GALLERY / 作品</a>
+<a href="./materials.html">MATERIALS / 素材</a>
+<a href="./videos.html">FILM / 映像</a>
+<a href="./faq.html">INFO / 案内</a>
 </nav>
 <h1>作品ビジュアルアーカイブ<br><span lang="en">VISUAL ARCHIVE</span></h1>
 </header>
@@ -203,6 +215,11 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 </section>
 
 </main>
-<footer><p>© 2026 強敵とも / 強敵とも</p></footer>
+<footer class="kyouteki-footer">
+<div class="footer-mark"><span>KYOUTEKI TOMO</span><strong>強敵とも</strong><small>INDEPENDENT CREATOR ARCHIVE</small></div>
+<p>実物鎧とコスプレ作品の個人制作記録。</p>
+<div class="footer-links"><a href="./index.html">ホーム</a><a href="./gallery.html">作品アーカイブ</a><a href="./videos.html">映像</a><a href="./index.html#inquiry-form">お問い合わせ</a><a href="https://www.youtube.com/channel/UCCShMqMWqt1xPwbJxNoCTzQ" target="_blank" rel="noopener noreferrer">YouTube</a></div>
+<p class="footer-copy">© 2026 KYOUTEKI TOMO. All rights reserved.</p>
+</footer>
 </body>
 </html>
