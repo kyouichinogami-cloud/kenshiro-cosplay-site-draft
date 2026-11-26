@@ -254,6 +254,68 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 body>header{padding-bottom:clamp(18px,3vw,30px)!important}
 @media(max-width:650px){body>header{padding-bottom:18px!important}}
 </style>
+
+<style id="kyouteki-home-hero-polish-v1">
+/* Refined hero frame and source label: cinematic, legible, and clearly attributed */
+.home-hero::before{
+  content:"";
+  position:absolute;
+  z-index:2;
+  inset:13px;
+  border:1px solid rgba(222,231,243,.2);
+  pointer-events:none;
+}
+.home-hero-copy{max-width:700px}
+.home-hero .home-kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:11px;
+  color:#d1d9e5;
+  font-size:.7rem;
+  letter-spacing:.2em;
+}
+.home-hero .home-kicker::before{
+  content:"";
+  display:inline-block;
+  width:28px;
+  height:1px;
+  background:linear-gradient(90deg,#e3e9f1,#8797ad);
+}
+.home-hero h2{
+  max-width:680px;
+  text-wrap:balance;
+  text-shadow:0 5px 30px rgba(0,0,0,.62);
+}
+.hero-source-note{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:7px 10px;
+  border:1px solid rgba(210,222,238,.25);
+  background:rgba(5,8,13,.72);
+  backdrop-filter:blur(8px);
+  letter-spacing:.13em;
+}
+.hero-source-note::before{
+  content:"";
+  width:5px;
+  height:5px;
+  flex:0 0 5px;
+  border-radius:50%;
+  background:#b8c6d8;
+  box-shadow:0 0 10px rgba(190,207,229,.65);
+}
+@media(max-width:650px){
+  .home-hero::before{inset:9px}
+  .home-hero-copy{max-width:none}
+  .home-hero .home-kicker{font-size:.62rem;letter-spacing:.14em}
+  .hero-source-note{max-width:calc(100% - 30px);font-size:.52rem;letter-spacing:.1em}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-hero::before{transition:none}
+}
+</style>
+
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
