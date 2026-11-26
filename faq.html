@@ -28,6 +28,11 @@
     a { color: #8ab4f8; }
   
 .yt-build-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:18px 0}.yt-build-card{overflow:hidden;background:#121217;border:1px solid #38383f;border-radius:8px}.yt-build-card a{display:block;text-decoration:none}.yt-build-card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}.yt-build-card div{padding:10px 12px}.yt-build-card h3{margin:0 0 5px;font-size:1rem;line-height:1.5}.yt-build-card p{margin:0;color:#b8b8c2;font-size:.92rem}
+.faq-index-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:14px}
+.faq-index-links a{display:flex;align-items:center;min-height:42px;padding:8px 10px;border:1px solid rgba(184,199,220,.2);background:rgba(9,13,19,.38);color:#dce5f1;font-size:.82rem;line-height:1.45;text-decoration:none}
+.faq-index-links a:hover{border-color:rgba(210,222,239,.58);background:rgba(151,169,193,.14);color:#fff}
+@media(max-width:700px){.faq-index-links{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:380px){.faq-index-links{grid-template-columns:1fr}}
 </style>
 
 <link rel="stylesheet" href="./artist-theme.css">
@@ -182,41 +187,41 @@ main{counter-reset:field-question}
 <section class="page-masthead">
 <img class="masthead-art" src="https://i.ytimg.com/vi/PQ-21jiNvIo/maxresdefault.jpg" alt="実物アーマーの記録を紹介するYouTube公開映像のサムネイル" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
 <span class="masthead-art-note">PROJECT FILM STILL / YOUTUBE</span><span>FIELD GUIDE / PROJECT NOTES</span><h2>THE DETAILS.<br>WITHOUT THE MYTH.</h2><p>素材、製作方針、実物と背景演出の違い。よくある質問をまとめました。</p><div class="masthead-rule"><i>PROJECT</i><i>MATERIALS</i><i>VISUALS</i></div></section>
-    <div class="faq-index" aria-label="FAQ overview"><span>FIELD GUIDE / 08 QUESTIONS</span><strong>知りたいことから、すぐに。</strong><p>質問をタップすると回答が開きます。</p></div>
-<details class="faq-item" open>
+    <nav class="faq-index" aria-label="質問一覧"><span>FIELD GUIDE / 08 QUESTIONS</span><strong>知りたいことから、すぐに。</strong><p>項目を選ぶと該当する回答へ移動します。</p><div class="faq-index-links"><a href="#faq-01">01 素材について</a><a href="#faq-02">02 実物と背景</a><a href="#faq-03">03 動画を見る</a><a href="#faq-04">04 使用した防具</a><a href="#faq-05">05 完成作品の特徴</a><a href="#faq-06">06 金属色の仕上げ</a><a href="#faq-07">07 背景演出</a><a href="#faq-08">08 制作記録</a></div></nav>
+<details class="faq-item" id="faq-01" open>
 <summary>Q. 鎧にはどのような素材が使われていますか？</summary>
 <div class="faq-answer"><p>実物のアメリカンフットボール用防具と本革ライダースジャケットを組み合わせた、着用できるコスチュームです。ガンメタルとシルバーを基調とした仕上がりが特徴です。</p></div>
 </details>
 
-    <details class="faq-item">
+    <details class="faq-item" id="faq-02">
 <summary>Q. 背景はCGですか？鎧は本当に着ていますか？</summary>
 <div class="faq-answer"><p>背景はCG合成の場合がありますが、着用している鎧と本革ライダースジャケットは100%実物です。</p>
     <p lang="en">The wearable costume combines real American football protective gear and a genuine leather jacket, with a gunmetal-and-silver finish. Backgrounds may be CGI-composited; the worn armor and jacket are real physical items.</p></div>
 </details>
 
-    <details class="faq-item">
+    <details class="faq-item" id="faq-03">
 <summary>Q. 動画はどこで見られますか？</summary>
 <div class="faq-answer"><p>製作動画一覧と公式プレイリストを公開しています。<a href="./videos.html">HIDDEN ARMORの動画一覧</a> または <a href="https://www.youtube.com/playlist?list=PLVbVaAH-0GsY" target="_blank" rel="noopener noreferrer">YouTube公式プレイリスト</a>をご覧ください。</p></div>
 </details>
 
     <section>
-      <details class="faq-item">
+      <details class="faq-item" id="faq-04">
 <summary>Q. どのような防具を使っていますか？</summary>
 <div class="faq-answer"><p>実物のアメリカンフットボール用防具を作品の素材として活かしています。既製のコスプレ用プラスチック鎧を購入して装着したものではありません。</p></div>
 </details>
-      <details class="faq-item">
+      <details class="faq-item" id="faq-05">
 <summary>Q. 完成した鎧の特徴は何ですか？</summary>
 <div class="faq-answer"><p>実物防具と本革ライダースジャケットが一体となったシルエットと、ガンメタル・シルバーを基調とした外観が特徴です。ここでは完成した作品の魅力を紹介しています。</p></div>
 </details>
-      <details class="faq-item">
+      <details class="faq-item" id="faq-06">
 <summary>Q. 表面の金属色はどのように仕上げていますか？</summary>
 <div class="faq-answer"><p>ガンメタルとシルバーを中心に、手作業で塗装しています。</p></div>
 </details>
-      <details class="faq-item">
+      <details class="faq-item" id="faq-07">
 <summary>Q. 写真や動画の背景も実物ですか？</summary>
 <div class="faq-answer"><p>背景にはCG合成を使用する場合があります。背景演出と、実際に着用している鎧・本革ライダースジャケットは区別して紹介しています。</p></div>
 </details>
-      <details class="faq-item">
+      <details class="faq-item" id="faq-08">
 <summary>Q. 制作過程や素材を確認できますか？</summary>
 <div class="faq-answer"><p><a href="./materials.html">素材・構成</a>、<a href="./armor-process.html">鎧の詳細工程</a>、<a href="./videos.html">公開動画一覧</a>で紹介しています。写真ギャラリーには、元画像と内容を確認できた素材のみを掲載します。</p></div>
 </details>
