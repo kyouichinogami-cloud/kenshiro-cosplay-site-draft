@@ -1,0 +1,35 @@
+:root{color-scheme:dark;--bg:#090b0f;--surface:#151920;--text:#f0f2f5;--muted:#adb6c4;--border:#39424f;--link:#d7dfeb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 50% -15%,rgba(108,126,151,.22),transparent 46%),linear-gradient(180deg,#090b0f,#11151c 55%,#090b0f);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.85;letter-spacing:.012em}
+header,main,footer{width:min(1120px,100%);margin:0 auto;padding:24px clamp(18px,4vw,42px)}
+nav{display:flex;flex-wrap:wrap;align-items:center;gap:7px 10px;margin:0 0 28px;padding:10px 13px;border:1px solid rgba(184,195,211,.22);background:linear-gradient(100deg,rgba(24,29,37,.96),rgba(11,13,18,.9))}
+nav a{display:inline-block;padding:7px 10px;color:#d8dde5;text-decoration:none;font-size:.9rem;letter-spacing:.04em;font-weight:650}
+nav a:hover{color:#fff;background:rgba(176,190,210,.1);text-decoration:none}
+h1{border:0;border-bottom:1px solid #596474;padding:0 0 18px;font-size:clamp(1.8rem,5vw,3.4rem);line-height:1.2;letter-spacing:.035em;color:#f2f3f5}
+h2{border:0;border-bottom:1px solid rgba(174,188,208,.24);padding:0 0 12px;color:#edf0f5;font-size:clamp(1.25rem,2.7vw,1.8rem);letter-spacing:.04em}
+h3{color:#e7eaf0}p,li{color:#d0d5de}a{color:var(--link)}
+a:focus-visible{outline:3px solid #e4c98d;outline-offset:4px}
+.panel,article,.card{background:linear-gradient(135deg,rgba(26,31,40,.96),rgba(12,14,19,.98));border:1px solid rgba(174,188,208,.2);border-radius:3px;box-shadow:0 18px 55px rgba(0,0,0,.2)}
+.panel{padding:clamp(18px,3vw,32px);margin:24px 0}
+.cta{display:inline-block;padding:11px 17px;margin:6px 8px 6px 0;border:1px solid #8795a9;border-radius:2px;color:#f1f3f6;text-decoration:none;font-weight:700;background:rgba(117,132,154,.12)}
+img{max-width:100%;height:auto}figure{margin:18px 0}figcaption,.muted{color:#aeb6c3}
+footer{border-top:1px solid #303844;color:#aeb6c3;font-size:.9rem;margin-top:40px}
+@media(max-width:620px){header,main,footer{padding-left:16px;padding-right:16px}nav{gap:5px}nav a{font-size:.84rem;padding:6px 7px}.panel{padding:17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Shared finishing rules: keep the cinematic theme consistent across all pages */
+html{scroll-padding-top:24px}
+:where(a,button,iframe,summary,[tabindex]):focus-visible{outline:3px solid #e4c98d;outline-offset:4px}
+iframe{max-width:100%;border:0}
+figure img{display:block;width:100%;height:auto}
+figcaption{margin-top:8px;font-size:.88rem;line-height:1.6}
+@media(max-width:620px){
+  header,main,footer{padding-left:16px;padding-right:16px}
+  nav{gap:6px 9px}
+  nav a{font-size:.84rem;padding:6px 8px}
+  .panel{padding:17px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
