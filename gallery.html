@@ -150,6 +150,31 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 </style>
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <meta name="theme-color" content="#090c11">
+<style id="kyouteki-gallery-editorial-v2">
+.archive-meta-strip{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:24px 0 14px;padding:16px 19px;border-top:1px solid rgba(185,199,218,.26);border-bottom:1px solid rgba(185,199,218,.18);background:linear-gradient(90deg,rgba(48,60,77,.35),transparent)}
+.archive-meta-strip>div{display:grid;grid-template-columns:auto auto;align-items:center;column-gap:10px}
+.archive-meta-strip span{grid-column:1/-1;color:#aebdd0;font-size:.61rem;letter-spacing:.2em}
+.archive-meta-strip strong{grid-row:2;color:#eef2f7;font-size:2rem;line-height:1;font-weight:750}
+.archive-meta-strip small{align-self:center;color:#b9c5d5;font-size:.62rem;letter-spacing:.16em}
+.archive-meta-strip>p{max-width:390px;margin:0;color:#aeb9c8;font-size:.83rem;line-height:1.65;text-align:right}
+#visual-archive .yt-build-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin-top:20px}
+#visual-archive .yt-build-card{position:relative;border-radius:2px!important;border-color:rgba(185,199,218,.24)!important;background:#090c11!important;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+#visual-archive .yt-build-card a{position:relative;height:100%}
+#visual-archive .yt-build-card img{aspect-ratio:16/9;object-fit:cover;filter:contrast(1.08) saturate(.72);transition:transform .5s ease,filter .35s ease}
+#visual-archive .yt-build-card a:after{content:"";position:absolute;inset:0 0 auto;height:58%;pointer-events:none;background:linear-gradient(180deg,rgba(4,6,9,.35),transparent)}
+#visual-archive .yt-build-card div{position:relative;min-height:104px;padding:17px 18px 18px;border-top:1px solid rgba(185,199,218,.16);background:linear-gradient(125deg,rgba(29,37,49,.92),rgba(8,11,16,.98))}
+#visual-archive .yt-build-card h3{margin:0 0 7px;color:#edf1f6;font-size:clamp(1rem,2vw,1.18rem);letter-spacing:.025em}
+#visual-archive .yt-build-card p{color:#b7c2d1;font-size:.87rem}
+#visual-archive .yt-build-card:nth-child(1) h3:before{content:"01 / THE FINISHED FORM";display:block;margin-bottom:7px;color:#9eafc4;font-size:.58rem;letter-spacing:.18em}
+#visual-archive .yt-build-card:nth-child(2) h3:before{content:"02 / MATERIAL STUDY";display:block;margin-bottom:7px;color:#9eafc4;font-size:.58rem;letter-spacing:.18em}
+#visual-archive .yt-build-card:nth-child(3) h3:before{content:"03 / HANDCRAFT";display:block;margin-bottom:7px;color:#9eafc4;font-size:.58rem;letter-spacing:.18em}
+#visual-archive .yt-build-card:nth-child(4) h3:before{content:"04 / THE STORY";display:block;margin-bottom:7px;color:#9eafc4;font-size:.58rem;letter-spacing:.18em}
+#visual-archive .yt-build-card:hover{transform:translateY(-4px);border-color:rgba(211,223,239,.6)!important;box-shadow:0 18px 42px rgba(0,0,0,.34)}
+#visual-archive .yt-build-card:hover img{transform:scale(1.025);filter:contrast(1.12) saturate(.9)}
+#visual-archive .yt-build-card a:focus-visible{outline:3px solid #dce5f1;outline-offset:4px}
+@media(max-width:620px){.archive-meta-strip{align-items:flex-start;flex-direction:column}.archive-meta-strip>p{text-align:left}.archive-meta-strip strong{font-size:1.7rem}#visual-archive .yt-build-grid{grid-template-columns:1fr;gap:12px}#visual-archive .yt-build-card div{min-height:0;padding:14px 15px}}
+@media(prefers-reduced-motion:reduce){#visual-archive .yt-build-card,#visual-archive .yt-build-card img{transition:none}#visual-archive .yt-build-card:hover{transform:none}#visual-archive .yt-build-card:hover img{transform:none}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -183,7 +208,8 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 <p lang="en">Original photographs will be added only after source and content review. All current cards are thumbnails from public YouTube videos, not original photo uploads.</p>
 <p><a href="./videos.html">映像アーカイブへ｜VIDEO ARCHIVE</a> ・ <a href="https://www.youtube.com/playlist?list=PLVbVaAH-0GsY" target="_blank" rel="noopener noreferrer">YouTube公式プレイリスト</a></p>
 </section>
-<section class="panel" id="visual-archive"><h2>公開映像ビジュアルアーカイブ</h2><p>以下は「強敵とも」で公開している映像のサムネイルです。実物写真と混同しないよう、公開映像のビジュアルとして掲載しています。</p><div class="yt-build-grid">
+<section class="panel" id="visual-archive"><h2>公開映像ビジュアルアーカイブ</h2><p>以下は「強敵とも」で公開している映像のサムネイルです。実物写真と混同しないよう、公開映像のビジュアルとして掲載しています。</p><div class="archive-meta-strip" aria-label="アーカイブ情報"><div><span>COLLECTION</span><strong>04</strong><small>PUBLIC FILM STILLS</small></div><p>実物写真とは区別し、公開映像の記録として収録しています。</p></div>
+<div class="yt-build-grid">
 <article class="yt-build-card"><a href="https://www.youtube.com/watch?v=2vKtx7vkwpA" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/2vKtx7vkwpA/maxresdefault.jpg" alt="完成した実物アーマーの公開映像サムネイル" loading="lazy"><div><h3>THE COMPLETE ARMOR</h3><p>完成した実物アーマーの全体像</p></div></a></article>
 <article class="yt-build-card"><a href="https://www.youtube.com/watch?v=tilIlpzKp8A" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/tilIlpzKp8A/maxresdefault.jpg" alt="実物素材を紹介する公開映像サムネイル" loading="lazy"><div><h3>REAL MATERIALS</h3><p>実物防具と本革を使った製作仕様</p></div></a></article>
 <article class="yt-build-card"><a href="https://www.youtube.com/watch?v=EQhcVfGd2kQ" target="_blank" rel="noopener noreferrer"><img src="https://i.ytimg.com/vi/EQhcVfGd2kQ/maxresdefault.jpg" alt="手工具による製作を紹介する公開映像サムネイル" loading="lazy"><div><h3>HAND BUILT</h3><p>手工具による製作と手作業の塗装</p></div></a></article>
