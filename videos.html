@@ -137,6 +137,24 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 </style>
 <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <meta name="theme-color" content="#090c11">
+<style id="kyouteki-video-archive-v2">
+.video-collection-meta{margin:24px 0 16px;padding:17px 19px;border-left:2px solid #c2cede;background:linear-gradient(90deg,rgba(102,121,148,.2),rgba(9,12,17,.2))}
+.video-collection-meta span{display:block;color:#aebdd0;font-size:.62rem;letter-spacing:.2em}
+.video-collection-meta strong{display:block;margin:6px 0;color:#f0f3f8;font-size:clamp(1.05rem,2.4vw,1.4rem);letter-spacing:.035em}
+.video-collection-meta p{margin:0;color:#b9c4d2;font-size:.88rem}
+.video-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:16px!important}
+.video-card{overflow:hidden;border-radius:2px!important;border:1px solid rgba(185,199,218,.23)!important;background:linear-gradient(140deg,#1b2430,#090c11)!important;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.video-card>a{height:100%}
+.video-card img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;filter:contrast(1.08) saturate(.76);transition:transform .45s ease,filter .3s ease}
+.video-card .copy{min-height:112px;padding:16px 17px!important;border-top:1px solid rgba(185,199,218,.16)}
+.video-card .copy h3{color:#edf1f6;font-size:1.04rem;line-height:1.5}
+.video-card .copy p{color:#b8c3d2;font-size:.88rem}
+.video-card:hover{transform:translateY(-4px);border-color:rgba(211,223,239,.58)!important;box-shadow:0 17px 40px rgba(0,0,0,.34)}
+.video-card:hover img{transform:scale(1.025);filter:contrast(1.12) saturate(.9)}
+.video-card a:focus-visible{outline:3px solid #dce5f1;outline-offset:4px}
+@media(max-width:620px){.video-grid{grid-template-columns:1fr!important;gap:12px!important}.video-card .copy{min-height:0;padding:14px 15px!important}}
+@media(prefers-reduced-motion:reduce){.video-card,.video-card img{transition:none}.video-card:hover{transform:none}.video-card:hover img{transform:none}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -166,28 +184,29 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 <h2>最初に見てほしい製作記録｜Featured Build Videos</h2>
 <p>実際に公開されているHIDDEN ARMORの動画から、素材・完成形・製作の背景が分かる4本を選びました。各カードからYouTubeの動画を直接開けます。</p>
 <p lang="en">Four public HIDDEN ARMOR Shorts introduce the materials, finished armor and the story behind the build.</p>
+<div class="video-collection-meta"><span>CURATED SELECTION / 04 FILMS</span><strong>THE PROJECT, IN FOUR CHAPTERS.</strong><p>素材、完成形、製作、そして物語。作品を知るための4つの入口。</p></div>
 <div class="video-grid">
 <article class="video-card">
 <a href="https://www.youtube.com/watch?v=tilIlpzKp8A" target="_blank" rel="noopener noreferrer">
-<img src="https://i.ytimg.com/vi/tilIlpzKp8A/maxres2.jpg" alt="HIDDEN ARMOR BUILD RECEIPT：素材の全貌 動画サムネイル" loading="lazy">
+<img src="https://i.ytimg.com/vi/tilIlpzKp8A/hqdefault.jpg" alt="HIDDEN ARMOR BUILD RECEIPT：素材の全貌 動画サムネイル" loading="lazy">
 <div class="copy"><h3>BUILD RECEIPT：素材の全貌</h3><p>実物アメフト防具、本革ライダース、手工具による製作仕様</p></div>
 </a>
 </article>
 <article class="video-card">
 <a href="https://www.youtube.com/watch?v=2vKtx7vkwpA" target="_blank" rel="noopener noreferrer">
-<img src="https://i.ytimg.com/vi/2vKtx7vkwpA/maxres2.jpg" alt="HIDDEN ARMOR 全貌。40年越しの鎧、その全て。動画サムネイル" loading="lazy">
+<img src="https://i.ytimg.com/vi/2vKtx7vkwpA/hqdefault.jpg" alt="HIDDEN ARMOR 全貌。40年越しの鎧、その全て。動画サムネイル" loading="lazy">
 <div class="copy"><h3>全貌。40年越しの鎧、その全て。</h3><p>完成した実物アーマーの全体像</p></div>
 </a>
 </article>
 <article class="video-card">
 <a href="https://www.youtube.com/watch?v=PQ-21jiNvIo" target="_blank" rel="noopener noreferrer">
-<img src="https://i.ytimg.com/vi/PQ-21jiNvIo/maxres2.jpg" alt="HIDDEN ARMOR 40年の残響。言葉のない鎧。動画サムネイル" loading="lazy">
+<img src="https://i.ytimg.com/vi/PQ-21jiNvIo/hqdefault.jpg" alt="HIDDEN ARMOR 40年の残響。言葉のない鎧。動画サムネイル" loading="lazy">
 <div class="copy"><h3>40年の残響。言葉のない鎧。</h3><p>長く思い描いてきた姿を実物にした記録</p></div>
 </a>
 </article>
 <article class="video-card">
 <a href="https://www.youtube.com/watch?v=EQhcVfGd2kQ" target="_blank" rel="noopener noreferrer">
-<img src="https://i.ytimg.com/vi/EQhcVfGd2kQ/maxres2.jpg" alt="HIDDEN ARMOR 鉄床の誓い。手工具だけで作る鎧。動画サムネイル" loading="lazy">
+<img src="https://i.ytimg.com/vi/EQhcVfGd2kQ/hqdefault.jpg" alt="HIDDEN ARMOR 鉄床の誓い。手工具だけで作る鎧。動画サムネイル" loading="lazy">
 <div class="copy"><h3>鉄床の誓い。手工具だけで作る鎧。</h3><p>手工具による製作と手作業の塗装</p></div>
 </a>
 </article>
