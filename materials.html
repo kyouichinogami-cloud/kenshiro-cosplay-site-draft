@@ -120,6 +120,38 @@ main .spec-board li:before{content:"";position:absolute;left:0;top:14px;bottom:1
 
 <link rel="preconnect" href="https://i.ytimg.com">
 <link rel="preload" as="image" href="https://i.ytimg.com/vi/tilIlpzKp8A/maxresdefault.jpg" fetchpriority="high">
+
+<style id="kyouteki-material-index-v1">
+/* Material page: turn the component list into a restrained editorial specification board */
+.material-index .editorial-eyebrow,.material-photo-note .editorial-eyebrow{
+ display:block;margin:0 0 10px;color:#aebbd0;font-size:.66rem;font-weight:750;letter-spacing:.2em
+}
+.material-index .spec-board li{min-height:92px;padding:22px 42px 18px 22px;font-weight:650;letter-spacing:.025em}
+.material-index .spec-board li:after{
+ position:absolute;right:15px;top:12px;color:#8797ad;font-size:.62rem;font-weight:750;letter-spacing:.16em
+}
+.material-index .spec-board li:nth-child(1):after{content:"01"}
+.material-index .spec-board li:nth-child(2):after{content:"02"}
+.material-index .spec-board li:nth-child(3):after{content:"03"}
+.material-index .spec-board li:nth-child(4):after{content:"04"}
+.material-index .spec-board li:nth-child(5):after{content:"05"}
+.material-photo-note{
+ position:relative;overflow:hidden;margin:26px 0!important;padding:clamp(20px,3vw,30px)!important;
+ border:1px solid rgba(184,198,219,.24);border-left:2px solid #aebbd0;
+ background:linear-gradient(110deg,rgba(26,34,46,.94),rgba(9,12,18,.97));
+ box-shadow:0 18px 50px rgba(0,0,0,.25)
+}
+.material-photo-note h2{margin:0 0 12px!important}
+.material-photo-note p{max-width:760px;margin-bottom:16px}
+.material-review-status{
+ display:inline-flex;align-items:center;gap:9px;padding:8px 11px;
+ border:1px solid rgba(178,194,216,.27);background:rgba(5,8,13,.56);
+ color:#c8d3e2;font-size:.61rem;font-weight:750;letter-spacing:.14em
+}
+.material-review-status i{width:6px;height:6px;border-radius:50%;background:#aebbd0;box-shadow:0 0 9px rgba(174,187,208,.5)}
+@media(max-width:560px){.material-index .spec-board li{min-height:68px;padding:16px 38px 16px 18px}.material-photo-note{padding:18px!important}.material-review-status{font-size:.55rem;letter-spacing:.09em}}
+</style>
+
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -139,8 +171,8 @@ main .spec-board li:before{content:"";position:absolute;left:0;top:14px;bottom:1
 <section class="page-masthead">
 <img class="masthead-art" src="https://i.ytimg.com/vi/tilIlpzKp8A/maxresdefault.jpg" alt="実物素材の紹介をするYouTube公開映像のサムネイル" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
 <span class="masthead-art-note">MATERIAL FILM STILL / YOUTUBE</span><span>MATERIAL STUDY / REAL COMPONENTS</span><h2>THE MATERIALS<br>DEFINE THE FORM.</h2><p>実物アメリカンフットボール防具と本革ライダース。素材そのものの存在感を記録。</p><div class="masthead-rule"><i>FOOTBALL GEAR</i><i>GENUINE LEATHER</i><i>GUNMETAL / SILVER</i></div></section>
-<section class="panel"><h2>作品を形づくる要素</h2><ul class="spec-board"><li>マッドマックス2を思わせる世界観</li><li>実物のアメリカンフットボール用防具</li><li>本革ライダースジャケット</li><li>ガンメタル＆シルバーを基調とした仕上がり</li><li>背景はCG合成の場合があります。着用している鎧と革ジャンは実物です</li></ul><p lang="en">A Mad Max 2-inspired visual style, real American football protective gear, a genuine leather motorcycle jacket and a gunmetal-and-silver finish. Backgrounds may be CGI-composited; the worn armor and jacket are real physical items.</p></section>
-<section><h2>素材写真について</h2><p>素材写真は、実物写真の確認と掲載準備が完了したものだけを掲載します。未確認の画像は公開ページに表示しません。</p></section>
+<section class="panel material-index"><span class="editorial-eyebrow">MATERIAL INDEX / 05 ELEMENTS</span><h2>作品を形づくる要素</h2><ul class="spec-board"><li>マッドマックス2を思わせる世界観</li><li>実物のアメリカンフットボール用防具</li><li>本革ライダースジャケット</li><li>ガンメタル＆シルバーを基調とした仕上がり</li><li>背景はCG合成の場合があります。着用している鎧と革ジャンは実物です</li></ul><p lang="en">A Mad Max 2-inspired visual style, real American football protective gear, a genuine leather motorcycle jacket and a gunmetal-and-silver finish. Backgrounds may be CGI-composited; the worn armor and jacket are real physical items.</p></section>
+<section class="material-photo-note" aria-labelledby="material-photo-title"><span class="editorial-eyebrow">PHOTO REVIEW / ORIGINAL SOURCE</span><h2 id="material-photo-title">素材写真について</h2><p>素材写真は、実物写真の確認と掲載準備が完了したものだけを掲載します。未確認の画像は公開ページに表示しません。</p><span class="material-review-status"><i aria-hidden="true"></i> ORIGINAL PHOTO REVIEW IN PROGRESS</span></section>
 <section class="panel">
 <h2>素材の実物を映像で確認｜MATERIAL STUDY</h2>
 <p>素材構成を紹介する公開動画のプレビューです。掲載画像はYouTubeの公開映像サムネイルで、独自撮影の素材写真とは区別しています。</p>
