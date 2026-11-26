@@ -175,6 +175,18 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 
 <link rel="preconnect" href="https://i.ytimg.com">
 <link rel="preload" as="image" href="https://i.ytimg.com/vi/EQhcVfGd2kQ/maxresdefault.jpg" fetchpriority="high">
+
+<style id="kyouteki-project-statement-v1">
+.project-statement{position:relative;overflow:hidden;margin:30px 0!important;padding:clamp(24px,4vw,42px)!important;border:1px solid rgba(190,205,226,.3);background:radial-gradient(ellipse at 100% 0,rgba(128,148,178,.17),transparent 48%),linear-gradient(135deg,#1b2431,#0a0d13);box-shadow:0 24px 64px rgba(0,0,0,.34)}
+.project-statement:after{content:"PROJECT / 01";position:absolute;right:clamp(18px,3vw,32px);top:clamp(18px,3vw,28px);color:rgba(193,207,226,.16);font-size:clamp(1.8rem,5vw,3.6rem);font-weight:900;letter-spacing:.08em;pointer-events:none}
+.project-statement .editorial-eyebrow{display:block;margin-bottom:12px;color:#afbed2;font-size:.65rem;font-weight:800;letter-spacing:.22em}
+.project-statement h2{position:relative;z-index:1;max-width:700px}
+.project-statement>p:first-of-type{max-width:760px;font-size:clamp(1rem,2vw,1.14rem);line-height:2}
+.project-statement ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 24px;padding-left:1.5rem}
+.project-statement li{padding:9px 8px;border-bottom:1px solid rgba(190,205,226,.16)}
+.project-statement a{ text-underline-offset:4px}
+@media(max-width:600px){.project-statement{padding:20px!important}.project-statement ol{grid-template-columns:1fr;gap:2px}.project-statement:after{font-size:1.7rem;top:12px;right:12px}}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">本文へスキップ</a>
@@ -197,7 +209,7 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
 <section class="page-masthead">
 <img class="masthead-art" src="https://i.ytimg.com/vi/EQhcVfGd2kQ/maxresdefault.jpg" alt="手作業による製作記録を紹介するYouTube公開映像のサムネイル" loading="eager" fetchpriority="high" decoding="async" width="1280" height="720">
 <span class="masthead-art-note">PROJECT FILM STILL / YOUTUBE</span><span>THE PROJECT / VISUAL IDENTITY</span><h2>A REAL OBJECT.<br>A CINEMATIC SPIRIT.</h2><p>実物素材の存在感、本革ライダースとの調和、ガンメタルとシルバーが生む独自の表情。完成した作品の世界観を紹介します。</p><div class="masthead-rule"><i>REAL MATERIAL</i><i>WORN SILHOUETTE</i><i>STEEL FINISH</i></div></section>
-    <section class="process-step">
+    <section class="process-step process-step-editorial">
 <div class="process-step-number" aria-hidden="true">01</div>
 <div class="process-step-copy"><span class="process-step-label">FEATURE / MATERIAL CHARACTER</span><h2>実物素材の存在感</h2><p>実物のアメリカンフットボール用防具が持つ立体感と存在感を、作品の表情として活かしています。</p></div>
 </section>
@@ -222,8 +234,8 @@ header nav::-webkit-scrollbar-thumb{background:#69788d}
     <p><a class="cta" href="./videos.html">映像アーカイブを見る｜VIDEO ARCHIVE</a></p>
   </section>
 
-    <section>
-      <h2>作品を形づくる要素｜THE PROJECT IDENTITY</h2>
+    <section class="project-statement" aria-labelledby="project-statement-title"><span class="editorial-eyebrow">ARTIST STATEMENT / THE PROJECT</span>
+      <h2 id="project-statement-title">作品を形づくる要素｜THE PROJECT IDENTITY</h2>
       <p>この作品の中心は、実物の防具と本革ウェアが生み出す独自のシルエットです。素材の特徴、完成した姿、映像に残した作品の背景を紹介します。</p>
       <ol>
         <li><strong>素材：</strong>実物のアメリカンフットボール用防具と本革ライダースジャケット。</li>
