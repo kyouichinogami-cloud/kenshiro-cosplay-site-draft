@@ -45,3 +45,18 @@ nav a[aria-current="page"]{
 nav a[aria-current="page"]:hover{
   background:linear-gradient(180deg,rgba(190,205,226,.24),rgba(105,123,149,.14));
 }
+
+/* Mobile-first navigation usability: comfortable touch targets and gentle horizontal snapping */
+header nav{
+  scroll-snap-type:x proximity;
+  scroll-padding-inline:10px;
+  touch-action:pan-x pan-y;
+  -webkit-overflow-scrolling:touch;
+}
+header nav a{
+  min-height:44px!important;
+  scroll-snap-align:start;
+}
+@media(max-width:650px){
+  header nav a{min-height:44px!important}
+}
