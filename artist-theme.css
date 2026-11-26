@@ -73,3 +73,20 @@ header nav a{
   }
   header nav a{flex:0 0 auto;white-space:nowrap}
 }
+
+
+/* Run #275 — site-wide reading, anchor and keyboard-navigation finish */
+:where(main,section,article,[id]){scroll-margin-top:1.5rem}
+:where(h1,h2,h3,p,li,figcaption){text-wrap:pretty}
+:where(p,li,figcaption,a,summary){overflow-wrap:anywhere}
+:where(a,button,summary,[role="button"],input,select,textarea):focus-visible{
+  outline:3px solid #e7cc91;
+  outline-offset:4px;
+  border-radius:2px;
+}
+:where(summary){cursor:pointer}
+::selection{background:rgba(190,207,231,.32);color:#fff}
+@media(max-width:620px){
+  :where(h1,h2,h3){text-wrap:balance}
+  :where(main,section,article,[id]){scroll-margin-top:1rem}
+}
